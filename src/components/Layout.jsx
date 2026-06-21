@@ -1,9 +1,13 @@
+import { Sidebar } from './Sidebar.jsx';
+import { Outlet } from 'react-router-dom';
+
 export function Layout() {
-	return (
-		<>
-			<div>
-				<sidebar></sidebar>
-			</div>
-		</>
-	);
+    return (
+        <>
+            <div>
+                <Sidebar />
+                <Outlet />
+            </div>
+        </>
+    );
 }

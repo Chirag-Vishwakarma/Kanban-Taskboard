@@ -49,16 +49,16 @@ export function Sidebar() {
                 Kanban Pro
             </header>
             <nav className={styles.menu}>
-                <NavLink to="board" className={styles.menuItem}>
+                <NavLink to="/board" className={styles.menuItem}>
                     Boards
                 </NavLink>
 
                 {/* {map boards & take outside} */}
 
-                <NavLink to="analytics" className={styles.menuItem}>
+                <NavLink to="/analytics" className={styles.menuItem}>
                     Analytics
                 </NavLink>
-                <NavLink to="archive" className={styles.menuItem}>
+                <NavLink to="/archive" className={styles.menuItem}>
                     Archive
                 </NavLink>
             </nav>

@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar {
+  width: 14rem;
+  border: 1px solid var(--border);
+}

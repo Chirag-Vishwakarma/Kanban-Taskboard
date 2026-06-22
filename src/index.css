@@ -1,0 +1,80 @@
+:root {
+    --sans: 'Inter', system-ui, sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+    --sans-serif: 'Inter', system-ui, sans-serif;
+    --font-heading: 'Poppins', Georgia, sans-serif;
+
+    --border-sm: 5px;
+    --border-md: 8px;
+
+    --accent: #6c63ff;
+    --accent-hd: #574fe0;
+    --accent-glow: rgba(88, 166, 255, 0.15);
+
+    font-size: 16px;
+    /* make var for font size afterwards & refactor */
+
+    font-synthesis: none;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+
+    color-scheme: light dark;
+}
+
+/*Light Theme */
+.light {
+    --color-text-primary: rgb(75, 75, 75);
+    --color-text-secondary: #000000;
+
+    --color-border: rgb(175, 175, 175);
+    --color-border-hover: rgb(175, 175, 175);
+
+    --color-bg: rgb(245, 245, 245);
+    --color-bg-card: rgba(255, 255, 255, 1);
+    --color-bg-card-hover: rgb(245, 245, 245);
+
+    --color-bg-badge: rgb(225, 225, 225);
+    --color-text-badge: #000000;
+    --color-border-badge: #ffffff;
+
+    --color-logo: #000000;
+}
+
+/*Dark Theme */
+.dark {
+    --color-logo: #ffffff;
+
+    --color-text-primary: #8b949e;
+    --color-text-secondary: #ffffff;
+
+    --color-border: #30363d;
+    --color-border-hover: #484f58;
+
+    --color-bg: #0d1117;
+    --color-bg-card: #161b22;
+    --color-bg-card-hover: #1c2128;
+
+    --color-bg-badge: #1d2d3e;
+    --color-text-badge: #accent;
+    --color-border-badge: #1f4068;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--sans);
+    line-height: 1.5;
+    min-height: 100dvh;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    overflow-x: hidden;
+}
